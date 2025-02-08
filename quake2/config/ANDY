@@ -1,0 +1,167 @@
+//////Config for Quake2 by ANDY  from CANNIBALS//////
+Clear
+echo Hallo ANDY, what's cooking?
+
+set exec default.cfg
+Unbindall
+
+set name "ANDY"
+set hostname " ÍÅÁÔ ÌÏÁÆ"
+set skin "female/athena"
+set gender_auto "1"
+set hand "2"
+set crosshair "1"
++mlook
+set rate "25000"
+set cl_vwep "1"
+set cl_noskins "0"
+//ÎÑÍÎÂÍÛÅ ÇÍÀ×ÅÍÈß
+bind ESCAPE "togglemenu"
+bind ~ "toggleconsole"
+//Size
+bind - sizedown
+bind = sizeup
+//Score
+alias +scores "cmd help"
+alias -scores "cmd help"
+bind a "+scores"
+con_notifytime "10"
+scr_conspeed "274607"
+win_noalttab "0"
+allow_download "1"
+
+bind F3 "disconnect"
+bind F4 "quit"
+bind F11 D
+bind F12 "ScreenShot"
+//Äëÿ êëàâû
+bind e "+forward"
+bind d "+back"
+bind f  "+moveright"
+bind s "+moveleft"
+bind shift "+movedown"
+alias +double "+moveup;wait;wait;wait;-moveup;wait;wait;wait;+moveup"
+alias -double "-moveup"
+bind space "+double"
+//zoom
+alias +zoom "fov 40; sensitivity 3.5"
+alias -zoom "fov 90; sensitivity 5.5"
+-zoom
+bind c "+zoom"
+//Äëÿ ìûøè
+set cl_run "1"
+sensitivity "5.5"
+set m_filter "1"
+set lookstrafe "0"
+set lookspring "0"
+set m_pitch "0.017"
+//ÎÐÓÆÅÉÍÀß
+bind g "use Shotgun; wait; use Super Shotgun"
+bind mouse1 "+Attack"
+bind mouse2 "cha"
+bind w "use RailGun; echo Aaa... Hy Bce...;echo BceM nu3gEu,"
+bind r "use Rocket Launcher;"
+bind g "use Grenades; wait; use Grenade Launcher"
+alias cha "use Shotgun;use Machinegun;use Hyperblaster;use Super Shotgun;use Chaingun"
+  bind kp_end "Drop Power Shield;say_team PS Dropped"
+  bind kp_downarrow "Drop hotGun; Drop Shells;say_team S Dropped"
+  bind kp_pgdn "Drop Super ShotGun; Drop Shells;say_team SS Dropped"
+  bind kp_leftarrow "Drop MachineGun; Drop Bullets;say_team M Dropped"
+  bind kp_5 "Drop Chaingun; Drop Bullets;say_team C Dropped"
+  bind kp_rightarrow "Drop Grenade Launcher; Drop Grenades;say_team GL Dropped"
+  bind kp_home "Drop Rocket Launcher; Drop Rockets;say_team RL Dropped"
+  bind kp_uparrow "Drop HyperBlaster; Drop Cells;say_team HB Dropped"
+  bind kp_pgup "Drop RailGun; Drop Slugs;say_team RG Dropped"
+  bind kp_ins "Drop BFG10K; Drop Cells;say_team B F G Dropped"
+  bind kp_del "Drop Tech;say_team Power T Dropped"
+
+bind ins "drop shells"
+bind home "drop bullets"
+bind pgup "drop grenades"
+bind del "drop rockets"
+bind end "drop cells"
+bind pgdn "drop slugs"
+bind 1 "smile"
+alias smile "smile1"
+alias smile1 "say :);alias smile smile2"
+alias smile2 "say %);alias smile smile3"
+alias smile3 "say :);alias smile smile4"
+alias smile4 "say 8];alias smile smile1"
+bind 5 messagemode
+bind enter "invuse"
+bind BackSpace "invdrop"
+bind [ Invprev
+bind ] Invnext
+//ÑÎÊÐÀÙÅÍÈß
+alias 1 "map q2dm1"
+alias 2 "map q2dm2"
+alias 3 "map q2dm3"
+alias 4 "map q2dm4"
+alias 5 "map q2dm5"
+alias 6 "map q2dm6"
+alias 7 "map q2dm7"
+alias 8 "map q2dm8"
+alias z2 "map ztn2dm2"
+alias z3 "map ztn2dm3"
+alias m1 "map match1"
+vid_gamma "0.6"
+fov "90"
+vid_fullscreen "1"
+viewsize "100"
+cl_maxfps "200"
+cl_blend "0"
+cl_lights "1"  set cl_gun 0
+cl_particles "1"
+set vid_xpos "256"
+set vid_ypos "300"
+set sw_stipplealpha "0"
+set sw_waterwarp "1"
+set sw_allow_modex "0"
+set cl_sidespeed 200
+cd_nocd "1"
+set deathmatch "1"
+  set dmflags "16"
+  set msg "1"
+  set sv_reconnect_limit "3"
+  set cheats "0"
+  set sv_gravity "800"
+  set maxclients "16"
+cl_footsteps "1"
+//Vol
+bind . vup
+bind , vdn
+alias vup volume_4
+alias vdn volume_2
+alias vsnd "play player/female/jump1"
+alias volume_0 "vsnd; set s_volume 0   ;alias vup volume_1;                    echo VOL >---------- 0"
+alias volume_1 "vsnd; set s_volume 0.1 ;alias vup volume_2;alias vdn volume_0; echo VOL ->--------- 1"
+alias volume_2 "vsnd; set s_volume 0.2 ;alias vup volume_3;alias vdn volume_1; echo VOL -->-------- 2"
+alias volume_3 "vsnd; set s_volume 0.3 ;alias vup volume_4;alias vdn volume_2; echo VOL --->------- 3"
+alias volume_4 "vsnd; set s_volume 0.4 ;alias vup volume_5;alias vdn volume_3; echo VOL ---->------ 4"
+alias volume_5 "vsnd; set s_volume 0.5 ;alias vup volume_6;alias vdn volume_4; echo VOL ----->----- 5"
+alias volume_6 "vsnd; set s_volume 0.6 ;alias vup volume_7;alias vdn volume_5; echo VOL ------>---- 6"
+alias volume_7 "vsnd; set s_volume 0.7 ;alias vup volume_8;alias vdn volume_6; echo VOL ------->--- 7"
+alias volume_8 "vsnd; set s_volume 0.8 ;alias vup volume_9;alias vdn volume_7; echo VOL -------->-- 8"
+alias volume_9 "vsnd; set s_volume 0.9 ;alias vup volume_10;alias vdn volume_8;echo VOL --------->- 9"
+alias volume_10 "vsnd; set s_volume 1  ;alias vdn volume_9;                    echo VOL ----------> 10"
+//DEMO
+alias demo1 "vsnd1;record Andy1;echo Rec Andy1; alias d stop1;"
+alias demo2 "vsnd1;record Andy2;echo Rec Andy2; alias d stop2;"
+alias demo3 "vsnd1;record Andy3;echo Rec Andy3; alias d stop3;"
+alias stop1 "vsnd1;stop; echo Stop Andy1; alias d demo2;"
+alias stop2 "vsnd1;stop; echo Stop Andy2; alias d demo3;"
+alias stop3 "vsnd1;stop; echo Stop Andy3;" 
+alias D demo1
+alias vsnd1 "play items/n_health.wav"
+set vid_gamma "0.5"
+set gl_modulate "20"
+set gl_shadows "0"
+set gl_dynamic "0"
+set gl_picmip "0"
+set gl_swapinterval "0"
+set gl_ext_swapinterval "1"
+set gl_polyblend "0"
+set gl_flashblend "0" bind  LEFTARROW "join;join ANDY"
+bind RIGHTARROW "ready;readyteam;say noexa/lu !!!;say_team HagepeM uM ux e6*Hoe caMo/ll-06ue."
+  bind UPARROW "sv hold;hold;sv mpause"
+  bind DOWNARROW "sv break;break"

@@ -1,0 +1,193 @@
+Clear
+Echo "ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ"
+Echo "ˆ Êõäçå's Config for Quake2 ˆ"
+Echo "ˆ   Last Update 15.01.2000  ˆ"
+Echo "ˆ                           ˆ"
+Echo "ˆ  DeathMatch Mode Enabled  ˆ"
+Echo "ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ"
+Unbindall
+
+// P l a y e r ' s   I n f o
+set name "TJ.Judge"
+set skin "female/athena"
+set gender_auto "0"
+set gender "male"
+
+// S e r v e r   S e t t i n g s
+set deathmatch "1"
+set hostname "[Ôhe Èall ïæ Êuctice]"
+set dmflags "1296"
+set sv_reconnect_limit "3"
+set sv_maxclients "4"
+set cheats "0"
+set sv_gravity "800"
+
+// A l i a s e s
+alias dm1 "map q2dm1"
+alias dm2 "map q2dm2"
+alias dm3 "map q2dm3"
+alias dm4 "map q2dm4"
+alias dm5 "map q2dm5"
+alias dm6 "map q2dm6"
+alias dm7 "map q2dm7"
+alias dm8 "map q2dm8"
+
+alias +zoom "fov 30;sensitivity 3"
+alias -zoom "fov 90;sensitivity 6"
+
+alias +scores "cmd help"
+alias -scores "cmd help"
+
+alias +double "+moveup;wait;wait;wait;-moveup;wait;wait;wait;+moveup"
+alias -double "-moveup"
+
+alias recdemo "stop;record Judge_vs_;alias stopdemo stop"
+alias stopdemo "recdemo"
+
+alias smash "use Shotgun;use Machinegun;use Hyperblaster;use Super Shotgun;use Chaingun"
+
+alias gl "Good Luck"
+alias gg "Good Game"
+
+// B i n d s
+bind mouse1 "+attack"
+bind mouse2 "smash"
+
+bind w "+forward"
+bind s "+back"
+bind a "+moveleft"
+bind d "+moveright"
+
+bind q "use Railgun"
+bind e "use Rocket Launcher"
+bind f "use Grenades;use Grenade Launcher"
+
+bind x "Fuck!"
+bind c "Yeah!"
+
+bind k "kill"
+bind p "sv mpause"
+
+bind TAB "+scores"
+bind SHIFT "+movedown"
+bind ALT "+zoom"
+bind SPACE "+double"
+bind ENTER "invuse"
+bind BACKSPACE "stopdemo"
+
+bind F1  "Menu_StartServer"
+bind F2  "Menu_JoinServer"
+bind F3  "ScreenShot"
+bind F4  "Stop;Quit"
+bind F5  "exec Judge.q2;wait;clear"
+bind F6  "menu"
+bind F7  "join"
+bind F8  "ready;hud"
+
+bind ESCAPE "togglemenu"
+bind ` "toggleconsole"
+bind ~ "toggleconsole"
+bind = "sizeup;play items/pkup.wav"
+bind - "sizedown;play items/pkup.wav"
+bind [ "invprev"
+bind ] "invnext"
+
+// T e a m p l a y
+bind 1 "invdrop;say_team [Take It]"
+bind 2 "drop Shotgun;wait;drop Shells;say_team [Shotgun Dropped]"
+bind 3 "drop Super Shotgun;wait;drop Shells;say_team [Super Shotgun Dropped]"
+bind 4 "drop Machinegun;wait;drop Bullets;say_team [Machinegun Dropped]"
+bind 5 "drop Chaingun;wait;drop Bullets;say_team [Chaingun Dropped]"
+bind 6 "drop Grenade Launcher;wait;drop Grenades;say_team [Grenade Launcher Dropped]"
+bind 7 "drop Rocket Launcher;wait;drop Rockets;say_team [Rocket Launcher Dropped]"
+bind 8 "drop Hyperblaster;wait;drop Cells;say_team [Hyperblaster Dropped]"
+bind 9 "drop Railgun;wait;drop Slugs;say_team [Railgun Dropped]"
+bind 0 "drop BFG10k;wait;drop Cells;say_team [BFG10k Dropped]"
+
+bind CTRL "say_team I am %l;say_team %h  %a;say_team %w"
+
+bind i "say_team How are you?"
+
+bind Ins "say_team <OUR LIFT>"
+bind Home "say_team <OUR ROOM>"
+bind PgUp "say_team <OUR WATER>"
+bind Del "say_team <ENEMY'S LIFT>"
+bind End "say_team <ENEMY'S ROOM>"
+bind PgDn "say_team <ENEMY'S WATER>"
+
+// T o u r n e y   S e t t i n g s
+set allow_item_quad 1
+set match_countdown 10
+set match_startsound 0
+alias tourney "disconnect;set game tourney;skill 3;exec 1v1.cfg"
+bind F11 "tourney"
+bind F12 "sv addbot Reaper male/sniper bots/reaper_c.c reaper"
+
+// V i d e o   S e t t i n g s
+set fov "90"
+set sw_mode "0"
+set vid_fullscreen "1"
+set viewsize "100"
+set vid_gamma "0.5"
+set vid_xpos "300"
+set vid_ypos "256"
+set vid_ref "soft"
+set cl_blend "1"
+set cl_lights "1"
+set cl_particles "1"
+set cl_noskins "0"
+set sw_stipplealpha "0"
+set sw_waterwarp "1"
+set sw_allow_modex "1"
+set sw_mipcap "0"
+set sw_mipscale "1"
+
+// S o u n d   S e t t i n g s
+set cd_nocd "0"
+set s_khz "22"
+set s_volume "1"
+set cl_stereo_separation "0.4"
+set s_primary "1"
+set s_mixahead "0.1"
+set s_loadas8bit "0"
+
+// O t h e r   S e t t i n g s
+set bob_roll "0"     
+set bob_pitch "0"    
+set bob_up "0"       
+set run_roll "0"
+set run_pitch "0"
+set cl_forwardspeed "200"
+set cl_sidespeed "200"
+set cl_run "1"
+
+set m_filter "1"
+set sensitivity "6"
+set freelook "1"
+set lookstrafe "0"
+set lookspring "0"
+set m_yaw "0.022"
+set m_pitch "0.017"
+
+set crosshair "1"
+set hand "2"
+set cl_gun "1"
+set cl_vwep "1"
+set g_select_empty "0"
+
+set scr_conspeed "65536"
+set msg "1"
+set flood_msgs "0"
+
+set in_mouse "1"
+set in_joystick "0"
+set win_noalttab "0"
+
+set allow_download "1"
+set allow_download_maps "1"
+set allow_download_sounds "1"
+set allow_download_models "1"
+set allow_download_players "1"
+
+set rate "25000"
+set cl_maxfps 200

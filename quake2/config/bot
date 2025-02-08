@@ -1,0 +1,32 @@
+//=OSP-TOURNEY-MODE=Server Commands & Team Play & Gladiator Bots=
+set allow_item_powerscreen 1
+set allow_item_powershield 1
+set allow_item_quad 1
+set allow_item_invul 1
+set allow_item_pack 1
+set allow_weapon_bfg10k 1
+set allow_id 0
+set client_hud 1
+set match_countdown 10
+set team_lockskin 0
+set team_idteam 1
+set match_startsound 0
+
+set team_a_name "KomaHDa-1"
+set team_a_skin "male/sniper"
+set team_b_name "KomaHDa-2"
+set team_b_skin "male/sniper"
+
+alias tourney "game tourney;skill 3;ex"
+alias ex "ex1"
+alias ex1 "alias ex ex2;exec 1v1.cfg"
+alias ex2 "alias ex ex1;exec team.cfg"
+
+alias team "ts;tn"
+alias tn "teamname BANSHEE"
+alias ts "teamskin Female/Athena"
+
+bind BACKSPACE "sv mpause"
+bind F9 tourney
+bind F10 "sv addrandom"
+bind F11 "sv addbot Reaper male/claymore bots/reaper_c.c reaper"

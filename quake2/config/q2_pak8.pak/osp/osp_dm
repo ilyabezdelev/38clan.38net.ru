@@ -1,0 +1,117 @@
+// OSP Tourney DM Server Configuration File
+// ========================================
+//
+// *** REGULAR DM MODE ***
+//
+
+set dmflags 17424
+set deathmatch 1
+
+set fraglimit 0
+set timelimit 20
+
+
+// ####################################
+//      SERVER-SPECIFIC PARAMETERS
+// ####################################
+set camera_depth 60.0
+set camera_pitch 15.0
+set numgibs 2
+set nextlevel_click 15.0
+set nextlevel_default 35.0
+set allow_id 2
+set respawn_delay 3
+set referee_enable 0
+set referee_password none
+set ffa_hurtself 1
+set motd_file "motd/dmmotd.txt"
+set fast_respawn 0.65
+set fast_minpbound 4
+set fast_maxpbound 16
+set flood_msgs 1000
+set flood_persecond 4
+set flood_waitdelay 10
+set player_ban 0
+set player_file "players.txt"
+set bots_autoload 0
+set bots_botfile "botcfg/botsdm.cfg"
+set bots_minplayers 4
+set bots_noclients 0
+set bots_warmuptime 0
+
+
+// ########################################
+//      VARIOUS CLIENT CONTROL SETTINGS
+// ########################################
+set client_botdetect 1
+set client_deathweapdrop 1
+set client_fastweap 0
+set client_highscores 1
+set client_hud 0
+set client_maxrate 0
+set client_maxfps 0
+set client_minping 0
+set client_maxping 0
+set client_nomove 90
+set client_protect 0
+set client_recover 0
+set client_hud 1
+
+
+// ############################
+//      LOGGING PARAMETERS
+// ############################
+set nglog_logstyle 0
+set nglog_logname "tourney/logs/ngLog/ngdmonly.log"
+set nglog_flush 2
+set nglog_buffer 5
+set nglog_logchat 0
+set nglog_logallpickups 1
+set nglog_worldstats 1
+set nglog_ngstats_browser 1
+set nglog_ngstats_exec 1
+set nglog_ngstats_cfg "ngStatsQ2T.cfg"
+set nglog_ngstats_logdir "logs"
+set nglog_ngstats_vidrestart 0
+
+set sl_log_method 0
+set sl_filename "tourney/logs/stdlog/dmonlyfrags.log"
+set sl_log_style 0
+set sl_log_flush 2
+set sl_log_logbots 1
+
+
+// ##################################
+//         MATCH Parameters
+// ##################################
+set match_mode 0
+
+
+// ###################################
+//        QUALIFIER Parameters
+// ###################################
+set qualifier_forceskins 1
+set qualifier_skinname "male/grunt"
+set qualifier_numspots 3
+
+
+// #################################
+//      TEAMPLAY/1v1 Parameters
+// #################################
+set team_a_name "A"
+set team_a_skin "female/brianna"
+set team_b_name "B"
+set team_b_skin "male/sniper"
+set team_maxplayers 4
+set team_hurtteam 1
+set team_hurtself 1
+set team_overtime_mode 1
+set team_overtime_time 1
+set team_lockskin 0
+set team_idteam 1
+set team_duelrecover 0
+set team_recovertime 0
+
+
+set hook_enable 0
+set runes_enable 0

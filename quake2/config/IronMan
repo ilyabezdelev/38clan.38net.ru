@@ -1,0 +1,201 @@
+// IronMan's Config File for QUAKE2
+// Last Update 05.11.99
+
+Clear
+
+Echo "ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ"
+Echo "ˆ You Are Using ÉòïîÍáî's Config  ˆ"
+Echo "ˆ      Last Update 05.11.99       ˆ"
+Echo "ˆ                                 ˆ"
+Echo "ˆ     DeathMatch Mode Enabled     ˆ"
+Echo "ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ"
+
+Unbindall
+
+// P l a y e r ' s   I n f o
+set name "IronMan"
+set skin "female/athena"
+set gender_auto "0"
+set gender "male"
+
+// S e r v e r   S e t t i n g s
+set deathmatch "1"
+set hostname "<no server>"
+set dmflags "1296"
+set sv_reconnect_limit "3"
+set sv_maxclients "8"
+set cheats "0"
+set sv_gravity "800"
+
+// A l i a s e s
+alias config "exec IronMan;wait;clear"
+
+alias dm1 "map q2dm1"
+alias dm2 "map q2dm2"
+alias dm3 "map q2dm3"
+alias dm4 "map q2dm4"
+alias dm5 "map q2dm5"
+alias dm6 "map q2dm6"
+alias dm7 "map q2dm7"
+alias dm8 "map q2dm8"
+
+alias ztn1 "map ztn2dm1"
+alias ztn2 "map ztn2dm2"
+alias ztn3 "map ztn2dm3"
+alias ztn4 "map ztn2dm4"
+alias ztn5 "map ztn2dm5"
+
+alias ctf1 "map q2ctf1"
+alias ctf2 "map q2ctf2"
+alias ctf3 "map q2ctf3"
+alias ctf4 "map q2ctf4"
+alias ctf5 "map q2ctf5"
+alias ctf "bind x use Grapple;bind z Drop Tech;id"
+
+alias +zoom "fov 30;sensitivity 3"
+alias -zoom "fov 90;sensitivity 6"
+
+alias +scores "cmd help"
+alias -scores "cmd help"
+
+alias +double "+moveup;wait;wait;wait;-moveup;wait;wait;wait;+moveup"
+alias -double "-moveup"
+
+alias RecStop "record Battle;echo Recording...;alias DemoMode Stop"
+alias DemoMode "RecStop"
+
+alias weapons "use Shotgun;use Machinegun;use Hyperblaster;use Super Shotgun;use Chaingun"
+
+alias duel "exec duel"
+
+// B i n d s
+bind mouse1 "+attack"
+bind mouse2 "+double"
+bind w "+forward"
+bind s "+back"
+bind a "+moveleft"
+bind d "+moveright"
+bind q "use Railgun"
+bind e "use Rocket Launcher"
+bind r "use Grenade Launcher"
+bind f "weapons"
+
+bind ALT "+zoom"
+
+bind F1  "Menu_StartServer"
+bind F2  "Menu_JoinServer"
+bind F3  "ScreenShot"
+bind F4  "Stop;Quit"
+
+bind F5  "config"
+bind F6  "menu"
+bind F7  "join"
+bind F8  "ready"
+
+bind ESCAPE "togglemenu"
+bind ` "toggleconsole"
+bind ~ "toggleconsole"
+bind TAB "+scores"
+bind SHIFT "+movedown"
+bind SPACE "invuse"
+bind ENTER "reconnect"
+bind BACKSPACE DemoMode
+bind = "sizeup;play items/pkup.wav"
+bind - "sizedown;play items/pkup.wav"
+bind [ "invprev"
+bind ] "invnext"
+bind UpArrow "use Power Shield"
+bind DownArrow "use Quad Damage"
+bind LeftArrow "use Silencer"
+bind RightArrow "use Invulnerability"
+
+// T e a m p l a y
+bind KP_END "invdrop"
+bind KP_DOWNARROW "drop ShotGun; wait; drop Shells"
+bind KP_PGDN "drop Super ShotGun; wait; drop Shells"
+bind KP_LEFTARROW "drop MachineGun; wait; drop Bullets"
+bind KP_5 "drop ChainGun; wait; drop Bullets"
+bind KP_RIGHTARROW "drop Grenade Launcher; wait; drop Grenades"
+bind KP_HOME "drop Rocket Launcher; wait; drop Rockets"
+bind KP_UPARROW "drop HyperBlaster; wait; drop Cells"
+bind KP_PGUP "drop RailGun; wait; drop Slugs"
+bind KP_INS "drop BFG10K; wait; drop Cells"
+bind 1 "use Blaster"
+bind 2 "use Shotgun"
+bind 3 "use Super Shotgun"
+bind 4 "use Machinegun"
+bind 5 "use Chaingun"
+bind 6 "use Grenades;use Grenade Launcher"
+bind 7 "use Rocket Launcher"
+bind 8 "use Hyperblaster"
+bind 9 "use Railgun"
+bind 0 "use Bfg10k"
+
+// V i d e o   S e t t i n g s
+set fov "90"
+set sw_mode "1"
+set vid_fullscreen "1"
+set viewsize "70"
+set vid_gamma "0.6"
+set vid_xpos "3"
+set vid_ypos "22"
+set vid_ref "soft"
+set cl_blend "1"
+set cl_lights "1"
+set cl_particles "1"
+set cl_noskins 1
+set sw_stipplealpha "0"
+set sw_waterwarp "0"
+set sw_allow_modex "1"
+set sw_mipcap "0"
+set sw_mipscale "1"
+
+// S o u n d   S e t t i n g s
+set cd_nocd "1"
+set s_khz "22"
+set s_volume "0.3"
+set cl_stereo_separation "0.4"
+set s_primary "1"
+set s_mixahead "0.14"
+set s_loadas8bit "1"
+
+// O t h e r   S e t t i n g s
+set bob_roll "0"     
+set bob_pitch "0"    
+set bob_up "0"       
+set run_roll "0"
+set run_pitch "0"
+set cl_forwardspeed "200"
+set cl_sidespeed "200"
+set cl_run "1"
+
+set m_filter "1"
+set sensitivity "6"
+set freelook "1"
+set lookstrafe "0"
+set lookspring "0"
+set m_yaw "0.022"
+set m_pitch "0.017"
+
+set crosshair "1"
+set hand "2"
+set cl_gun "1"
+set cl_vwep "1"
+set g_select_empty "0"
+
+set scr_conspeed "65536"
+set msg "1"
+set flood_msgs "0"
+
+set in_mouse "1"
+set in_joystick "0"
+set win_noalttab "0"
+
+set allow_download "1"
+set allow_download_maps "1"
+set allow_download_sounds "1"
+set allow_download_models "0"
+set allow_download_players "1"
+
+set rate "25000"
+set cl_maxfps 200
