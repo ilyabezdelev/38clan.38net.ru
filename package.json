@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "convert-to-utf8": "npx tsx scripts/convert-win1251-utf8.ts"
+  },
   "dependencies": {
     "iconv-lite": "^0.6.3",
     "typescript": "^5.7.3"

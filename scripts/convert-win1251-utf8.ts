@@ -2,9 +2,13 @@ import * as fs from 'fs'
 import * as iconv from 'iconv-lite'
 import * as path from 'path'
 
-// Define input and output directories
 const inputDir = path.join(process.cwd(), 'original-src')
 const outputDir = path.join(process.cwd(), '.tmp', 'src_utf8')
+
+if (fs.existsSync(outputDir)) {
+  fs.rmSync(outputDir, { recursive: true, force: true })
+  console.log(`Wiped output directory: ${outputDir}`)
+}
 
 function ensureDirectoryExists(filePath: string): void {
   const dirName = path.dirname(filePath)
@@ -38,14 +42,22 @@ function processDirectory(currentDir: string, relativeDir = ''): void {
     const relPath = path.join(relativeDir, entry.name)
     if (entry.isDirectory()) {
       processDirectory(fullPath, relPath)
-    } else if (
+      continue
+    }
+
+    if (
       entry.isFile() &&
       (entry.name.endsWith('.html') || entry.name.endsWith('.js'))
     ) {
       convertFile(fullPath, relPath)
-    } else {
-      copyFileUnchanged(fullPath, relPath)
+      continue
     }
+
+    if (entry.isFile() && entry.name.endsWith('.ini')) {
+      continue
+    }
+
+    copyFileUnchanged(fullPath, relPath)
   }
 }
 
