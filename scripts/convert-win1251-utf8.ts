@@ -2,8 +2,8 @@ import * as fs from 'fs'
 import * as iconv from 'iconv-lite'
 import * as path from 'path'
 
-const inputDir = path.join(process.cwd(), 'original-src')
-const outputDir = path.join(process.cwd(), '.tmp', 'src_utf8')
+const inputDir = path.join(process.cwd(), 'original-src', '38net.ru')
+const outputDir = path.join(process.cwd(), '.tmp', 'src_utf8', '38net.ru')
 
 if (fs.existsSync(outputDir)) {
   fs.rmSync(outputDir, { recursive: true, force: true })
