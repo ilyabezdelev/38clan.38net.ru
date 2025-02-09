@@ -1,0 +1,17 @@
+ a:link {font-family: Verdana; color:rgb(250,250,190); font-size: 8pt; text-decoration:none}
+ a:visited {font-family: Verdana; color:rgb(242,222,198); font-size: 8pt; text-decoration:none}
+ a:hover {font-family: Verdana; color:rgb(242,222,198); font-size: 8pt; text-decoration:none}
+ a:active {font-family: Verdana; color:rgb(242,222,198)red; font-size: 8pt; text-decoration:none}
+
+.menu  		{position: absolute;     top: 0;        left: 0;       z-order: 2;    visibility: visible;}
+.srcmenu 	{position: absolute;     top: 47;        left: 0;       z-order: 3;    visibility: hidden;}
+.clubmenu 	{position: absolute;     top: 47;        left: 120;       z-order: 4;    visibility: hidden;}
+.photosmenu 	{position: absolute;     top: 47;        left: 183;      z-order: 5;    visibility: hidden;}
+.gbmenu 	{position: absolute;     top: 47;        left: 350;      z-order: 7;    visibility: hidden;}
+.gamesmenu 	{position: absolute;     top: 47;        left: 270;      z-order: 6;    visibility: hidden;}
+
+.body 	{position: absolute;     top: 130;        left: 20;      z-order: 27;    visibility: visible;}
+.title 	{position: absolute;     top: 95;        left: 380;      z-order: 27;    visibility: visible;}
+
+.menufont {font-family: Verdana;  color:rgb(250,250,190); font-size: 8pt; text-decoration: none;}
+font, p, td, tr, body { font-family: Verdana; font-size: 8pt }
